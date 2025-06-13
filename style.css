@@ -54,3 +54,7 @@ body {
 .content.expanded {
   margin-left: 60px;
 }
+
+<div style="position: relative;">
+   <img src="images/BUDGETAPPROVED.png" style="position: absolute; middle: 120px; top: 240px;">
+</div>
