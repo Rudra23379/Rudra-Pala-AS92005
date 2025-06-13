@@ -1,15 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <h1>page 2</h1>
-<ul>
-  <li> <a href="index.html">home</a></li>
-   <li> <a href="page2.html">page2</a></li>
-</ul>
+  <meta charset="UTF-8">
+  <title>Collapsible Sidebar</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <div class="sidebar" id="sidebar">
+    <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+    <a href="index.html">Home</a>
+    <a href="#page2.html">page2</a>
+    <a href="#about">page3</a>
+    <a href="#contact">page</a>
+  </div>
+
+  <div class="content" id="content">
+    <h1>page 2</h1>
+    <p>This is the main content area .</p>
+  </div>
+
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById("sidebar");
+      const content = document.getElementById("content");
+      sidebar.classList.toggle("collapsed");
+      content.classList.toggle("expanded");
+    }
+  </script>
 
 </body>
 </html>
