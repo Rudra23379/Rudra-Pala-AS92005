@@ -17,10 +17,9 @@
 
 
   <div class="content" id="content">
-    <h1>Welcome</h1>
-    <p>This is the main content area next to the collapsible side navigation bar.</p>
+
   </div>
- <img src="images/BUDGETAPPROVED.png" width="500" height="250">
+ <img src="images/BUDGETAPPROVED.png" width="800" height="500">
   <script>
     function toggleSidebar() {
       const sidebar = document.getElementById("sidebar");
@@ -29,6 +28,14 @@
       content.classList.toggle("expanded");
     }
   </script>
+ div {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  width: 50%;
+}
 
 </body>
 </html>
