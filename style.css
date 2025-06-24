@@ -15,7 +15,7 @@ body {
 }
 
 .sidebar.collapsed {
-  width: 60px;
+  width: 55px;
 }
 
 .sidebar .toggle-btn {
@@ -94,3 +94,16 @@ div.content {
     float: none;
   }
 }
+
+/*Styles the "main" element, the middle div in which each page's actual content is displayed.*/
+main {
+    width: 70vw; /* takes up 70% of the viewport width */
+    height: 80vh; /* Padding is included in this height. */
+    overflow-y: auto; /* Scrolls only vertically */
+    margin: auto 2%; /* adjust as needed */
+}
+
+/*Styles both sidebars*/
+aside {
+    width: 15vw; /* Takes up 15% of the viewport width, adjust as needed */
+    height: 85vh; /* Remember, padding is included in this height! */
