@@ -1,109 +1,97 @@
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-
+  display: flex;
 }
+
 
 .sidebar {
   width: 220px;
   background-color: #111;
   height: 100vh;
   padding-top: 20px;
-  transition: width 0.3s;
+  transition: 0.3s;
   position: fixed;
   overflow: hidden;
 }
 
+
 .sidebar.collapsed {
-  width: 55px;
+  width: 60px;
 }
+
 
 .sidebar .toggle-btn {
   background-color: #111;
   color: white;
   border: none;
-  padding: 10px 15px;
+  padding: 10px;
   font-size: 18px;
   cursor: pointer;
   width: 100%;
   text-align: left;
 }
 
+
 .sidebar a {
   display: block;
   color: white;
   padding: 15px;
   text-decoration: none;
+  transition: 0.3s;
   white-space: nowrap;
-  overflow: hidden;
-  transition: opacity 0.3s;
 }
+
 
 .sidebar.collapsed a {
   opacity: 0;
   pointer-events: none;
 }
 
+
 .content {
   margin-left: 220px;
   padding: 20px;
-  transition: margin-left 0.3s;
+  transition: 0.3s;
   flex: 1;
 }
+
 
 .content.expanded {
   margin-left: 60px;
 }
 
 
-
-/* Active/current link */
 .sidebar a.active {
   background-color: #04AA6D;
-  color: white;
 }
 
-/* Links on mouse-over */
+
 .sidebar a:hover:not(.active) {
-  background-color: #555;
-  color: white;
+  background-color: #444;
 }
 
-/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
-div.content {
-  margin-left: 200px;
-  padding: 1px 16px;
-  height: 1000px;
-}
 
-/* On screens that are less than 700px wide, make the sidebar into a topbar */
 @media screen and (max-width: 700px) {
   .sidebar {
     width: 100%;
     height: auto;
     position: relative;
   }
-  .sidebar a {float: left;}
-  div.content {margin-left: 0;}
+
+  .sidebar a {
+    float: left;
+  }
+
+  .content {
+    margin-left: 0;
+  }
 }
 
-/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
 @media screen and (max-width: 400px) {
   .sidebar a {
     text-align: center;
     float: none;
   }
 }
-
-/*Styles the "main" element, the middle div in which each page's actual content is displayed.*/
-main {
-    width: 70vw; /* takes up 70% of the viewport width */
-    height: 80vh; /* Padding is included in this height. */
-    overflow-y: auto; /* Scrolls only vertically */
-    margin: auto 2%; /* adjust as needed */
-}
-
-/*Styles both sidebars*/
-aside {
-    width: 15vw; /* Takes up 15% of the viewport width, adjust as needed */
-    height: 85vh; /* Remember, padding is included in this height! */
