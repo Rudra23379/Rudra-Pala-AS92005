@@ -1,3 +1,10 @@
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+}
 
 body {
   margin: 0;
@@ -99,6 +106,7 @@ body {
 img {
   display: block;
   margin: 0 auto;
-  max-width: 800px; /* or whatever max width you want */
-  width: 100%; /* make image responsive */
+  max-width: 800px;
+  width: 100%;
   height: auto;
+
