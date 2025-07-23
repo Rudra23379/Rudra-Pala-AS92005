@@ -179,3 +179,21 @@ input:valid ~ span::after {
   padding-left: 5px;
   position: absolute;
 }
+
+
+#searchInput {
+  padding: 8px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#itemList {
+  list-style: none;
+  padding: 0;
+}
+
+#itemList li {
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+}
