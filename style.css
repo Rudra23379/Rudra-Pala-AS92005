@@ -22,6 +22,7 @@ body {
   transition: 0.3s;
   position: fixed;
   overflow: hidden;
+  z-index: 999;
 }
 
 
@@ -57,12 +58,13 @@ body {
   pointer-events: none;
 }
 
-
 .content {
   margin-left: 220px;
   padding: 20px;
-  transition: 0.3s;
+  transition: margin-left 0.3s;
   flex: 1;
+  position: relative;
+  z-index: 1;
 }
 
 
@@ -196,4 +198,13 @@ input:valid ~ span::after {
 #itemList li {
   padding: 8px;
   border-bottom: 1px solid #eee;
+}
+
+
+.header img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }

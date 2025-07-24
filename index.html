@@ -6,6 +6,25 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+
+  <div class="sidebar" id="sidebar">
+    <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+    <a href="index.html">Home</a>
+    <a href="page2.html">Page2</a>
+    <a href="page3.html">Page3</a>
+    <a href="page4.html">Page4</a>
+  </div>
+
+  <div class="content" id="content">
+    <div class="header">
+      <img src="images/1.jpg">
+      <h1>Pollution</h1>
+      <p>what they are and how to fight it</p>
+    </div>
+
+
+<ul id="itemList">
   <div>
     <label for="mySearch">Search :</label>
     <input
@@ -19,33 +38,13 @@
     <button>Search</button>
     <span class="validity"></span>
   </div>
-</form>
 
-  <div class="sidebar" id="sidebar">
-    <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
-    <a href="index.html">Home</a>
-    <a href="page2.html">Page2</a>
-    <a href="page3.html">Page3</a>
-    <a href="page4.html">Page4</a>
-     <input type="text" placeholder="Search..">
+    <div class="content">
+      <h2>What is pollution?</h2>
+      <p>Pollution is when harmful substances or materials are released into the environment, making it dirty or unsafe. It can affect the air we breathe, the water we drink, and the land we live on. Most pollution is caused by human activity, like cars releasing exhaust fumes, factories dumping chemicals, or people littering. This damage doesn’t just hurt nature, it also puts people and animals at risk. Over time, pollution can lead to serious problems like health issues, climate change, and the destruction of ecosystems.
+      <img src="images/2.jpg" alt="Pollution Image">
+    </div>
   </div>
-<form>
-
-
-  <div class="content" id="content">
-  <div class="header">
-  <h1>Pollution</h1>
-  <p>what they are and how to fight it</p>
-</div>
-
-
-<div> class="content">
-    <h2>what is pollution?</h2>
-    <p>Pollution is the introduction of harmful products or substances into our environment. It can damage the air we breathe, the water we drink, and the land we live on.</p>
-  <img src="images/2.jpg" >
-</div>
-  </div>
-
 
   <script>
     function toggleSidebar() {
@@ -57,3 +56,4 @@
   </script>
 
 </body>
+</html>
