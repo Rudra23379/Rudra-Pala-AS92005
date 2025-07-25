@@ -58,9 +58,11 @@ body {
   pointer-events: none;
 }
 
+
 .content {
   margin-left: 220px;
   padding: 20px;
+  transition: 0.3s;
   transition: margin-left 0.3s;
   flex: 1;
   position: relative;
@@ -202,7 +204,9 @@ input:valid ~ span::after {
 
 
 .header img {
+  background-image:('file:///C:/Users/23379/PycharmProjects/Rudra-Pala-AS92005/images/air%20head.jpg')
   width: 100%;
+  background-image ; cover
   max-height: 300px;
   object-fit: cover;
   border-radius: 10px;
