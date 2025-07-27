@@ -1,16 +1,16 @@
 
+
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
   document.getElementById("main").style.marginLeft = "250px";
 }
 
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
 
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
   document.getElementById("main").style.marginLeft = "0";
-
-  <script>
-  const searchInput = document.getElementById("searchInput");
+@@ -14,11 +14,30 @@ function closeNav() {
   const itemList = document.getElementById("itemList");
   const items = itemList.getElementsByTagName("li");
 

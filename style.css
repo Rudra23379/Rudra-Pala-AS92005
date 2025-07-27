@@ -1,7 +1,7 @@
 .header {
   padding: 80px;
   text-align: center;
-  background: #1abc9c;
+  background-image: url('images/1.jpg');
   color: white;
   font-size: 30px;
 }
@@ -203,12 +203,3 @@ input:valid ~ span::after {
 }
 
 
-.header img {
-  background-image:('file:///C:/Users/23379/PycharmProjects/Rudra-Pala-AS92005/images/air%20head.jpg')
-  width: 100%;
-  background-image ; cover
-  max-height: 300px;
-  object-fit: cover;
-  border-radius: 10px;
-  margin-bottom: 10px;
-}
