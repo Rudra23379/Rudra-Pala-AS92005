@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pollutionr</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="sidebar" id="sidebar">
+    <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+    <a href="index.html">What is pollution</a>
+    <a href="page2.html">types of pollution</a>
+    <a href="page3.html">Facts about pollution</a>
+    <a href="page4.html">Reduce pollution</a>
+    <a href="contact.html">contact us</a>
+  </div>
+
+
+  <div class="content" id="content">
+    <div class="header">
+  <h1>Contact us</h1>
+      </div>
+
+  </div>
+
+<div class="container">
+  <form action="action_page.php">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your  First name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+       <option value="New Zealand">New Zealand</option>
+        <option value="North Korea">North Korea</option>
+        <option value="South Korea">South Korea</option>
+        <option value="China">China</option>
+        <option value="India">India</option>
+        <option value="United Kindom">United Kindom</option>
+
+
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:300px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById("sidebar");
+      const content = document.getElementById("content");
+      sidebar.classList.toggle("collapsed");
+      content.classList.toggle("expanded");
+    }
+  </script>
+
+</body>
+</html>
