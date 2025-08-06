@@ -163,3 +163,14 @@ margin-bottom: 80px;
     text-align: center;
   }
   }
+
+
+video.{
+display: block;
+content-align: center;
+justify-content: center;
+ align-items: center;
+ margin:auto;
+ flex-wrap:wrap;
+
+}
