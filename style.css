@@ -163,7 +163,7 @@ margin-bottom: 80px;
   display: inline-block;
 }
 
-
+/*
 @media (max-width: 550px) {
   .navbar a {
     flex: 1 1 100%;
@@ -172,7 +172,7 @@ margin-bottom: 80px;
   }
 
 
-
+/* video container styling for centring my video */
 .video {
 display: block;
 display: flex;
